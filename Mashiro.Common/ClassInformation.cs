@@ -35,8 +35,28 @@
         /// </summary>
         public string AttendClasses {  get; set; } = string.Empty;
         /// <summary>
-        /// 上课时间
+        /// 上课时间表
         /// </summary>
         public string TimeTable { get; set; } = string.Empty;
+        /// <summary>
+        /// 课程开始节次
+        /// </summary>
+        public int StartIndex { get; set; } = -1;
+        /// <summary>
+        /// 课程开始时间
+        /// </summary>
+        public TimeTableInformation? StartTime {  get; set; }
+        /// <summary>
+        /// 课程结束节次
+        /// </summary>
+        public int EndIndex { get; set; } = -1;
+        /// <summary>
+        /// 课程结束时间
+        /// </summary>
+        public TimeTableInformation? EndTime { get; set; }
+        /// <summary>
+        /// 开课周数
+        /// </summary>
+        public List<bool> AvailableWeeks { get; set; } = [];
     }
 }

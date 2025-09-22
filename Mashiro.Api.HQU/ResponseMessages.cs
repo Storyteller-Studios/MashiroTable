@@ -33,4 +33,19 @@ namespace Mashiro.Api.HQU
             public string SemesterId { get; set; } = string.Empty;
         }
     }
+    public class TimeTableResponseMessage
+    {
+        [JsonPropertyName("datas")]
+        public Datas? Contents { get; set; }
+        public class Datas
+        {
+            [JsonPropertyName("jc")]
+            public TimeTableResponse? TimeTableResponse { get; set; }
+        }
+        public class TimeTableResponse
+        {
+            [JsonPropertyName("rows")]
+            public List<TimeTableInformation> Rows { get; set; } = [];
+        }
+    }
 }

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mashiro.Api.HQU", "Mashiro.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Schools", "Schools", "{279A7D0D-9A56-492D-BD0C-F300080244CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mashiro.Console.HQU", "Mashiro.Demo.HQU\Mashiro.Console.HQU.csproj", "{D0FF0229-4F3E-6575-01A3-E50597E291B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{FF11174B-E25E-4D27-A76D-1B27A622EC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF11174B-E25E-4D27-A76D-1B27A622EC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF11174B-E25E-4D27-A76D-1B27A622EC11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0FF0229-4F3E-6575-01A3-E50597E291B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0FF0229-4F3E-6575-01A3-E50597E291B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0FF0229-4F3E-6575-01A3-E50597E291B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0FF0229-4F3E-6575-01A3-E50597E291B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{E5D1D9D0-41E7-41BA-8580-63E392D840B5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {279A7D0D-9A56-492D-BD0C-F300080244CA}
 		{FF11174B-E25E-4D27-A76D-1B27A622EC11} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{D0FF0229-4F3E-6575-01A3-E50597E291B7} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {07039C3F-4E97-4994-9D88-95CC56F90745}
