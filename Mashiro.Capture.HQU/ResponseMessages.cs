@@ -1,7 +1,7 @@
 ﻿using Mashiro.Raw.HQU;
 using System.Text.Json.Serialization;
 
-namespace Mashiro.Api.HQU
+namespace Mashiro.Capture.HQU
 {
     public class ClassResponseMessage
     {
