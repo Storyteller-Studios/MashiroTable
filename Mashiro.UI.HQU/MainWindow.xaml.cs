@@ -97,7 +97,6 @@ namespace Mashiro.UI.HQU
                     {
                         Summary = item.ClassName,
                         Description = item.TimeTable,
-                        Contacts = [item.TeacherName],
                         Location = item.Location,
                         Start = new CalDateTime(addDays + startTimeSpan),
                         End = new CalDateTime(addDays + endTimeSpan)
