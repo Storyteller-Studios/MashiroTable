@@ -6,15 +6,7 @@ using Mashiro.Capture.HQU;
 using Mashiro.Raw.HQU;
 using Microsoft.Win32;
 using System.IO;
-using System.Text;
 using System.Windows;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Mashiro.UI.HQU
 {
@@ -42,7 +34,7 @@ namespace Mashiro.UI.HQU
         private void OnTimeTableResponseMessageReceived(TimeTableResponseMessage message)
         {
             _timeTableResponse = message;
-            if(_classResponse != null)
+            if (_classResponse != null)
             {
                 MessageBox.Show("课程信息获取完成, 请点击开始导出以导出课程表", "信息获取完成", MessageBoxButton.OK, MessageBoxImage.Information);
             }
@@ -85,7 +77,7 @@ namespace Mashiro.UI.HQU
             }
             var classData = _classResponse?.Contents?.SemesterScheduleResponse?.Rows?.Select(t => t.RawClassInformationToCommon(timeTable!)).ToList();
             var start = SemesterStrtDatePicker.SelectedDate.Value;
-            foreach(var item in classData!)
+            foreach (var item in classData!)
             {
                 for (int i = 0; i < item.AvailableWeeks.Count; i++)
                 {
