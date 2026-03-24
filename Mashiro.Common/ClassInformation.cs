@@ -39,6 +39,14 @@
         /// </summary>
         public string TimeTable { get; set; } = string.Empty;
         /// <summary>
+        /// 上课教室
+        /// </summary>
+        public string Location { get; set; } = string.Empty;
+        /// <summary>
+        /// 上课时间表
+        /// </summary>
+        public int DayOfWeek { get; set; } = 0;
+        /// <summary>
         /// 课程开始节次
         /// </summary>
         public int StartIndex { get; set; } = -1;

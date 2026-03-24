@@ -1,0 +1,15 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Schools/" />
+  <Folder Name="/Schools/HQU/">
+    <Project Path="Mashiro.Capture.HQU/Mashiro.Capture.HQU.csproj" />
+    <Project Path="Mashiro.Raw.HQU/Mashiro.Raw.HQU.csproj" />
+    <Project Path="Mashiro.UI.HQU/Mashiro.UI.HQU.csproj" Id="5acdf99f-120b-4911-a981-24ffadad82f1" />
+  </Folder>
+  <Project Path="Mashiro.Common/Mashiro.Common.csproj" />
+</Solution>

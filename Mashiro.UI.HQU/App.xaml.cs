@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace Mashiro.WPF.HQU
+namespace Mashiro.UI.HQU
 {
     /// <summary>
     /// Interaction logic for App.xaml
