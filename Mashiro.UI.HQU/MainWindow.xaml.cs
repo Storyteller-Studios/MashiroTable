@@ -90,8 +90,8 @@ namespace Mashiro.UI.HQU
                         Summary = item.ClassName,
                         Description = item.TimeTable,
                         Location = item.Location,
-                        Start = new CalDateTime(addDays + startTimeSpan),
-                        End = new CalDateTime(addDays + endTimeSpan)
+                        Start = new CalDateTime(addDays + startTimeSpan, "Asia/Shanghai"),
+                        End = new CalDateTime(addDays + endTimeSpan, "Asia/Shanghai")
                     };
                     calendar.Events.Add(calendarEvent);
                 }
