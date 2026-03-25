@@ -56,7 +56,7 @@ namespace Mashiro.UI.HQU
             _filter.OnClassResponseMessageReceived -= OnClassResponseMessageReceived;
             _filter.OnTimeTableResponseMessageReceived -= OnTimeTableResponseMessageReceived;
         }
-        public void TryParseDataToICLFile()
+        public void TryParseDataToICSFile()
         {
             if (_classResponse == null || _timeTableResponse == null)
             {
@@ -115,7 +115,32 @@ namespace Mashiro.UI.HQU
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
-            TryParseDataToICLFile();
+            TryParseDataToICSFile();
+        }
+
+        private void VPNCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            Browser.Source = new Uri("https://jwapp-hqu-edu-cn-s.atrust.hqu.edu.cn:9443");
+            _filter.UseVPN = true;
+        }
+
+        private void VPNCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Browser.Source = new Uri("https://jwapp.hqu.edu.cn");
+            _filter.UseVPN = false;
+        }
+
+        private void Redirect_Click(object sender, RoutedEventArgs e)
+        {
+            if (VPNCheckBox.IsChecked == true) 
+            {
+                Browser.Source = new Uri("https://jwapp-hqu-edu-cn-s.atrust.hqu.edu.cn:9443");
+                
+            }
+            else
+            {
+                Browser.Source = new Uri("https://jwapp.hqu.edu.cn");
+            }
         }
     }
 }

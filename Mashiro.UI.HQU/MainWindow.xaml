@@ -19,16 +19,28 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Horizontal">
             <DatePicker x:Name="SemesterStrtDatePicker" />
+            <CheckBox
+                x:Name="VPNCheckBox"
+                Margin="10,0,0,0"
+                Checked="VPNCheckBox_Checked"
+                Content="使用VPN连接教务系统"
+                Unchecked="VPNCheckBox_Unchecked" />
             <Button
                 x:Name="Start"
+                Margin="10,0,0,0"
                 Click="Start_Click"
                 Content="开始导出" />
+            <Button
+                x:Name="Redirect"
+                Margin="10,0,0,0"
+                Click="Redirect_Click"
+                Content="重定向至教务网页" />
         </StackPanel>
         <webview2:WebView2
             x:Name="Browser"
             Grid.Row="1"
             CoreWebView2InitializationCompleted="Browser_CoreWebView2InitializationCompleted"
-            Source="https://jwapp.hqu.edu.cn/jwapp/sys/wdkb/*default/index.do?EMAP_LANG=zh#/xskcb"
+            Source="https://jwapp.hqu.edu.cn/"
             Unloaded="Browser_Unloaded" />
     </Grid>
 </Window>
